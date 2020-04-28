@@ -1,42 +1,44 @@
-form {
-  border: 3px solid #f1f1f1;
-   border-radius: 25px;
-  font-family: Arial;
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-.container {
-  padding: 20px;
-   border-radius: 25px;
-  background-color: #f1f1f1;
+.form-inline label {
+  margin: 5px 10px 5px 0;
 }
 
-input[type=text], input[type=submit] {
-  width: 100%;
+.form-inline input {
   border-radius: 25px;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-input[type=email], input[type=submit] {
-  width: 100%;
-  border-radius: 25px;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgb(192, 68, 68);
 }
 
-
-input[type=submit] {
-  background-color: #4CAF50;
+.form-inline button {
   border-radius: 25px;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
   color: white;
-  border: none;
+  cursor: pointer;
 }
 
-input[type=submit]:hover {
-  opacity: 0.8;
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 250px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
