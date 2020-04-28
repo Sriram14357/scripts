@@ -1,40 +1,42 @@
-* {box-sizing: border-box;}
-
-.form-inline {  
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+form {
+  border: 3px solid #f1f1f1;
+   border-radius: 25px;
+  font-family: Arial;
 }
 
-.form-inline input {
+.container {
+  padding: 20px;
    border-radius: 25px;
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f1f1f1;
 }
 
-.form-inline button {
-   border-radius: 25px;
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
+input[type=text], input[type=submit] {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=email], input[type=submit] {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border-radius: 25px;
   color: white;
-  cursor: pointer;
+  border: none;
 }
 
-.form-inline button:hover {
-  background-color: royalblue;
-}
-
-@media (max-width: 250px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
-  
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
+input[type=submit]:hover {
+  opacity: 0.8;
 }
